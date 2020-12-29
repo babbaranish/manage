@@ -1,0 +1,49 @@
+//COLORS
+$primaryRed: hsl(12, 88%, 59%);
+$primaryBlue: hsl(228, 39%, 23%);
+$greyBlue: hsl(227, 12%, 61%);
+$darkBlue: hsl(233, 12%, 13%);
+$paleRed: hsl(13, 100%, 96%);
+$lightGrey: hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5
+}
+
+body {
+    font-family: "Be Vietnam", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: $greyBlue;
+}
+.container {
+    padding: 0 11rem;
+    // background-image: url("../images/bg-tablet-pattern.svg");
+    // background-repeat: no-repeat;
+
+    // background-position: 115% -70%;
+}
+
+@mixin btn {
+    border: none;
+    outline: none;
+    color: $paleRed;
+    background-color: $primaryRed;
+    padding: 1.5rem 3rem;
+    border-radius: 100px;
+    font-weight: 700;
+    box-shadow: 0 1rem 1rem rgba(242, 95, 58, 0.15);
+    cursor: pointer;
+}

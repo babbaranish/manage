@@ -1,0 +1,62 @@
+.container1 {
+    // background-image: url("../images/bg-tablet-pattern.svg");
+    // background-repeat: no-repeat;
+    // background-position: -80% -250%;
+    .different {
+        display: flex;
+
+        padding: 6rem 11rem;
+
+        &_left {
+            flex: 0 0 50%;
+            &-heading {
+                font-size: 4.5rem;
+                color: $primaryBlue;
+                line-height: 1.1;
+                padding: 0 3rem 0 0;
+            }
+
+            &-sub {
+                font-size: 1.7rem;
+                margin-top: 3rem;
+                width: 52%;
+            }
+        }
+        &_right {
+            flex: 1;
+
+            &-p {
+                display: flex;
+
+                &-number {
+                    align-self: stretch;
+                    padding: 0 2.5rem;
+                    background-color: $primaryRed;
+                    border-radius: 20px;
+                    color: $lightGrey;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    height: 4rem;
+                }
+                &-titles {
+                    margin-left: 3rem;
+
+                    &_heading {
+                        font-size: 1.8rem;
+                        color: $primaryBlue;
+                        &:not(:last-child) {
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    &_paragraph {
+                        font-size: 1.5rem;
+                        width: 70%;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.review {
+    margin: 10rem 0;
+    padding: 0 1rem;
+    &_heading {
+        text-align: center;
+        font-size: 4.5rem;
+        color: $primaryBlue;
+    }
+    &_hold {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .review_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 6rem;
+            &-img {
+                height: 8rem;
+                width: 8rem;
+                margin: 0 auto;
+            }
+            .name {
+                text-align: center;
+                color: $primaryBlue;
+                margin: 2rem 0;
+                font-size: 1.7rem;
+            }
+            .heading {
+                font-size: 1.4rem;
+                padding: 0 4rem;
+                // &:nth-child(1) {
+                //     padding-right: 35rem;
+                // }
+            }
+        }
+    }
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        .btn {
+            @include btn;
+            margin-top: 7rem;
+        }
+    }
+}
