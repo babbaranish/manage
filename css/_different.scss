@@ -24,7 +24,7 @@
         }
         &_right {
             flex: 1;
-
+            padding-left: 4rem;
             &-p {
                 display: flex;
 
@@ -32,7 +32,7 @@
                     align-self: stretch;
                     padding: 0 2.5rem;
                     background-color: $primaryRed;
-                    border-radius: 20px;
+                    border-radius: 9999px;
                     color: $lightGrey;
                     font-weight: 700;
                     font-size: 2rem;

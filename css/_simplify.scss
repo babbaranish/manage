@@ -1,0 +1,25 @@
+.simplify-bg {
+    .simplify {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primaryRed;
+        // background-image: url("../images/bg-simplify-section-desktop.svg");
+        // background-repeat: no-repeat;
+        // background-position: auto;
+        padding: 7rem 13rem;
+
+        &_heading {
+            color: $paleRed;
+            font-size: 4rem;
+            line-height: 1.1;
+        }
+
+        &_btn {
+            @include btn;
+            background-color: $paleRed;
+            color: $primaryRed;
+            margin-right: 5rem;
+        }
+    }
+}

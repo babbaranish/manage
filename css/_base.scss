@@ -2,7 +2,7 @@
 $primaryRed: hsl(12, 88%, 59%);
 $primaryBlue: hsl(228, 39%, 23%);
 $greyBlue: hsl(227, 12%, 61%);
-$darkBlue: hsl(233, 12%, 13%);
+$darkBlue: hsl(234, 29%, 13%);
 $paleRed: hsl(13, 100%, 96%);
 $lightGrey: hsl(0, 0%, 98%);
 
@@ -29,7 +29,7 @@ body {
     color: $greyBlue;
 }
 .container {
-    padding: 0 11rem;
+    padding: 0 13rem;
     // background-image: url("../images/bg-tablet-pattern.svg");
     // background-repeat: no-repeat;
 
@@ -42,7 +42,7 @@ body {
     color: $paleRed;
     background-color: $primaryRed;
     padding: 1.5rem 3rem;
-    border-radius: 100px;
+    border-radius: 9999px;
     font-weight: 700;
     box-shadow: 0 1rem 1rem rgba(242, 95, 58, 0.15);
     cursor: pointer;
