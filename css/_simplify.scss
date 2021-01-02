@@ -8,9 +8,15 @@
         // background-repeat: no-repeat;
         // background-position: auto;
         padding: 7rem 13rem;
+        @media only screen and(max-width:$bp-eSmall) {
+            flex-direction: column;
+            padding: 7rem 3rem;
+            text-align: center;
+            justify-content: center;
+        }
 
         &_heading {
-            color: $paleRed;
+            color: $lightGrey;
             font-size: 4rem;
             line-height: 1.1;
         }
@@ -20,6 +26,9 @@
             background-color: $paleRed;
             color: $primaryRed;
             margin-right: 5rem;
+            @media only screen and(max-width:$bp-eSmall) {
+                margin: 3rem 0 0 0;
+            }
         }
     }
 }

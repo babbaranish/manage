@@ -15,6 +15,21 @@
 </head>
 
 <body>
+
+
+  <!-- NAVBAR CARD -->
+  <div id="card" class="card-container">
+    <div class="card">
+      <ul class="card_list">
+        <li class="card_list-items">Pricing</li>
+        <li class="card_list-items">Product</li>
+        <li class="card_list-items">About Us</li>
+        <li class="card_list-items">Careers</li>
+        <li class="card_list-items">Community</li>
+      </ul>
+    </div>
+  </div>
+  <!-- CONTAINER -->
   <div class="container">
     <!-- NAVBAR -->
     <div class="header">
@@ -47,19 +62,24 @@
         </li>
       </ul>
       <button class="get-started">Get Started</button>
+
+      <img src="./images/icon-hamburger.svg" alt="Menu button" id="menu" class="menu">
+      <img src="./images/icon-close.svg" alt="Close button" id="close" class="close">
     </div>
+
+
     <!-- HERO SECTION -->
     <section class="hero">
       <!-- HERO LEFT -->
       <div class="hero_left">
         <h1 class="hero_left-heading">
-          Bring everyone together to build better products.
+          Bring everyone <br />together to build <br />better products.
         </h1>
         <h3 class="hero_left-subHeading">
           Manage makes it simple for software teams to plan day-to-day
           tasks while keeping the larger team goals in view.
         </h3>
-        <button class="get-started">Get Started</button>
+        <button class="hero_left-btn">Get Started</button>
       </div>
       <!-- HERO RIGHT -->
       <div class="hero_right">
@@ -140,7 +160,7 @@
     <h1 class="review_heading">What they've said</h1>
     <div class="review_hold">
 
-      <div class="review_container">
+      <div class="review_container one">
         <img class="review_container-img" src="images/avatar-anisha.png" alt="Anisha Li">
         <h2 class="name">
           Anisha Li
@@ -149,7 +169,7 @@
           visibility on larger milestones at all times keeps everyone motivated.”</p>
       </div>
 
-      <div class="review_container">
+      <div class="review_container two">
         <img class="review_container-img" src="images/avatar-ali.png" alt="Anisha Li">
         <h2 class="name">
           Ali Bravo
@@ -161,7 +181,7 @@
         </p>
       </div>
 
-      <div class="review_container">
+      <div class="review_container three">
         <img class="review_container-img" src="images/avatar-richard.png" alt="Anisha Li">
         <h2 class="name">
           Richard Watts
@@ -200,24 +220,29 @@
         <img src="./images/icon-pinterest.svg" alt="pinterest icon" class="footer_socail-icon-icons">
         <img src="./images/icon-instagram.svg" alt="instagram icon" class="footer_socail-icon-icons">
       </div>
+      <h3 class="footer_social-copyright">
+        Copyright 2020. All Rights Reserved
+      </h3>
     </div>
+    <div id="links">
 
-    <ul class="footer_nav">
-      <li class="footer_nav-items">Home</li>
-      <li class="footer_nav-items">Pricing</li>
-      <li class="footer_nav-items">Products</li>
-      <li class="footer_nav-items">About Us</li>
-    </ul>
+      <ul class="footer_nav">
+        <li class="footer_nav-items">Home</li>
+        <li class="footer_nav-items">Pricing</li>
+        <li class="footer_nav-items">Products</li>
+        <li class="footer_nav-items">About Us</li>
+      </ul>
 
-    <ul class="footer_career">
-      <li class="footer_career-items">Careers</li>
-      <li class="footer_career-items">Community</li>
-      <li class="footer_career-items">Privacy Policy</li>
-    </ul>
+      <ul class="footer_career">
+        <li class="footer_career-items">Careers</li>
+        <li class="footer_career-items">Community</li>
+        <li class="footer_career-items">Privacy Policy</li>
+      </ul>
+    </div>
 
     <div class="footer_news">
       <form class="footer_news-form" action="#">
-        <input class="footer_news-form_search" type="text" placeholder="Update in your inbox" required>
+        <input class="footer_news-form_search" type="email" placeholder="Update in your inbox" required>
         <button type="submit" class="footer_news-form_btn">
           Go
         </button>
@@ -227,6 +252,7 @@
       </h3>
     </div>
   </section>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

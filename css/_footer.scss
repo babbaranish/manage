@@ -3,38 +3,83 @@
     justify-content: space-between;
     padding: 6rem 13rem;
     background-color: $darkBlue;
+
+    #links {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 0 33.333%;
+
+        margin: 3rem 0;
+        width: 25rem;
+        @media only screen and(max-width:$bp-eSmall) {
+            order: 2;
+            margin: 3rem 0;
+        }
+    }
+    @media only screen and(max-width:$bp-eSmall) {
+        flex-direction: column;
+        padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
     &_social {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media only screen and(max-width:$bp-eSmall) {
+            order: 4;
+            justify-content: center;
+            align-items: center;
+        }
         .logo {
             height: 30px;
+            width: 182px;
+            @media only screen and(max-width:$bp-eSmall) {
+                order: 1;
+                margin: 3rem 0;
+            }
         }
-
+        &-copyright {
+            order: 2;
+            display: none;
+            @media only screen and(max-width:$bp-eSmall) {
+                display: inline;
+            }
+        }
         &-icon {
             display: flex;
             justify-content: space-between;
-            // &-icons {
-            // }
+
+            @media only screen and(max-width:$bp-eSmall) {
+                width: 30rem;
+                margin: 2rem 0;
+            }
+            .footer_socail-icon-icons {
+                height: 30px;
+            }
         }
     }
 
-    &_nav {
+    .footer_nav {
         list-style: none;
         &-items {
             font-size: 1.6rem;
             color: $lightGrey;
+            cursor: pointer;
             &:not(:last-child) {
                 margin-bottom: 1rem;
             }
         }
     }
 
-    &_career {
+    .footer_career {
         list-style: none;
 
         &-items {
             font-size: 1.6rem;
+            cursor: pointer;
             color: $lightGrey;
             &:not(:last-child) {
                 margin-bottom: 1rem;
@@ -46,12 +91,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media only screen and(max-width:$bp-eSmall) {
+            order: 1;
+        }
+
         &-form {
+            @media only screen and(max-width:$bp-eSmall) {
+            }
             &_search {
                 border: none;
                 padding: 1.5rem 2rem;
                 border-radius: 100px;
                 margin-right: 4px;
+                min-width: 20rem;
                 &::placeholder {
                     font-size: 1.3rem;
                 }
@@ -69,6 +121,9 @@
         }
         &-copyright {
             text-align: right;
+            @media only screen and(max-width:$bp-eSmall) {
+                display: none;
+            }
         }
     }
 }

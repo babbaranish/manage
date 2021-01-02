@@ -4,27 +4,49 @@
     // background-position: -80% -250%;
     .different {
         display: flex;
-
         padding: 6rem 11rem;
-
+        @media only screen and(max-width:$bp-eSmall) {
+            padding: 5rem 0;
+        }
+        @media only screen and(max-width:$bp-eSmall) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         &_left {
             flex: 0 0 50%;
+
             &-heading {
                 font-size: 4.5rem;
                 color: $primaryBlue;
                 line-height: 1.1;
                 padding: 0 3rem 0 0;
+                @media only screen and(max-width:$bp-eSmall) {
+                    font-size: 3rem;
+                    padding: 0;
+                    text-align: center;
+                    padding: 0 2rem;
+                }
             }
 
             &-sub {
                 font-size: 1.7rem;
                 margin-top: 3rem;
                 width: 52%;
+                @media only screen and(max-width:$bp-eSmall) {
+                    width: 100%;
+                    padding: 0 1rem;
+                    text-align: center;
+                    margin-bottom: 5rem;
+                }
             }
         }
         &_right {
             flex: 1;
             padding-left: 4rem;
+            @media only screen and(max-width:$bp-eSmall) {
+                padding-left: 1rem;
+            }
             &-p {
                 display: flex;
 
@@ -40,17 +62,29 @@
                 }
                 &-titles {
                     margin-left: 3rem;
-
+                    @media only screen and(max-width:$bp-eSmall) {
+                        margin-left: 1rem;
+                        padding-top: 6px;
+                    }
                     &_heading {
                         font-size: 1.8rem;
                         color: $primaryBlue;
                         &:not(:last-child) {
                             margin-bottom: 2rem;
                         }
+                        @media only screen and(max-width:$bp-eSmall) {
+                            font-size: 1.6rem;
+                        }
                     }
                     &_paragraph {
                         font-size: 1.5rem;
                         width: 70%;
+                        @media only screen and(max-width:$bp-eSmall) {
+                            width: unset;
+                            margin-top: 2rem;
+                            margin-left: -28%;
+                            text-align: left;
+                        }
                     }
                 }
                 &:not(:last-child) {

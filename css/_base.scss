@@ -5,6 +5,12 @@ $greyBlue: hsl(227, 12%, 61%);
 $darkBlue: hsl(234, 29%, 13%);
 $paleRed: hsl(13, 100%, 96%);
 $lightGrey: hsl(0, 0%, 98%);
+$bp-largest: 81.25em; //1300px
+$bp-large: 75rem; //1200px;
+$bp-medium: 56.25em; //900px;
+$bp-small: 48em; // 768px;
+$bp-smallest: 31.25em; //500px;
+$bp-eSmall: 23.44em; //375px
 
 * {
     margin: 0;
@@ -30,6 +36,16 @@ body {
 }
 .container {
     padding: 0 13rem;
+    position: relative;
+    @media only screen and(max-width:$bp-largest) {
+        padding: 0 10rem;
+    }
+    @media only screen and(max-width:$bp-large) {
+        padding: 0 6rem;
+    }
+    @media only screen and(max-width:$bp-medium) {
+        padding: 0 1rem;
+    }
     // background-image: url("../images/bg-tablet-pattern.svg");
     // background-repeat: no-repeat;
 
@@ -46,4 +62,7 @@ body {
     font-weight: 700;
     box-shadow: 0 1rem 1rem rgba(242, 95, 58, 0.15);
     cursor: pointer;
+    &:hover {
+        background-color: hsla(12, 88%, 59%, 0.726);
+    }
 }

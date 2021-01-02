@@ -5,9 +5,29 @@
     padding: 6rem 0;
     align-items: center;
     height: 5rem;
+    @media only screen and(max-width:$bp-small) {
+        padding: 5rem 0;
+    }
+
     .logo {
         height: 30px;
         flex: 0 0 180px;
+    }
+
+    #menu {
+        display: none;
+        cursor: pointer;
+        height: 20px;
+        padding-right: 20px;
+        @media only screen and(max-width:$bp-small) {
+            display: inline;
+        }
+    }
+    #close {
+        display: none;
+        padding-right: 20px;
+
+        cursor: pointer;
     }
 
     .nav {
@@ -15,9 +35,17 @@
         display: flex;
         justify-content: space-between;
         flex: 0 0 40%;
-
+        @media only screen and(max-width:$bp-large) {
+            flex: 0 0 50%;
+        }
+        @media only screen and(max-width:$bp-small) {
+            display: none;
+        }
         &_item {
             font-size: 1.5rem;
+            @media only screen and(max-width:$bp-medium) {
+                font-size: 1.3rem;
+            }
         }
         &_link {
             color: $primaryBlue;
@@ -27,4 +55,48 @@
 }
 .get-started {
     @include btn;
+    @media only screen and(max-width:$bp-small) {
+        display: none;
+    }
+}
+.card-container {
+    position: relative;
+    display: none;
+    margin: 0 2rem;
+
+    .card {
+        background-color: #ffe3dcdb;
+        border-radius: 10px;
+        position: absolute;
+        transition: all 0.5s ease;
+        top: 90px;
+        width: 100%;
+        z-index: 2;
+
+        &_list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto;
+            padding: 3rem 0;
+            text-align: center;
+
+            &-items {
+                color: $primaryBlue;
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+                font-weight: 700;
+                cursor: pointer;
+                &:hover {
+                    color: $primaryRed;
+                }
+            }
+        }
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+.show {
+    display: block !important;
 }
